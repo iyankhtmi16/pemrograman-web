@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Suara Independen</title>
+    <link rel="stylesheet" href="webAbout.css">
+    <script src="about.js" defer></script>
+</head>
+<body>
+    <div class="page">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">SUARA INDEPENDEN</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="indexA.html" class="aktif">About</a></li>
+                    <li><a href="indexR.html">Rundown</a></li>
+                </ul>
+            </nav>
+            <a href="#form-masukan" class="nav-button">MASUKAN</a>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="about-info">
+                <p class="subtitle">TENTANG EVENT</p>
+                <h2>Lebih dari Sekadar Musik</h2>
+                <p>
+                    Festival musik untuk menikmati karya musik
+                    independen dan kreativitas mahasiswa.
+                </p>
+
+                <div class="event-meta">
+                    <span>15 Desember 2026</span>
+                    <span>16.00 - 23.00 WITA</span>
+                    <span>Open Air Stage, UIN Mataram</span>
+                </div>
+            </div>
+
+            <div class="gambar">
+                <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=500"
+                alt="Konser 1">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=500"
+                alt="Konser 2">
+            </div>
+
+            <!-- LINEUP -->
+            <div class="lineup">
+                <h2>Pengisi Acara</h2>
+                <p>Total: <strong id="total">3</strong> Band</p>
+
+                <input type="text" id="cari"
+                placeholder="Cari band atau genre..."
+                aria-label="Cari band atau genre">
+
+                <div class="band" id="daftar">
+
+                    <div class="band-item">
+                        <h3>Senja di Kota</h3>
+                        <p>Indie Pop</p>
+                    </div>
+
+                    <div class="band-item">
+                        <h3>Ruang Tengah</h3>
+                        <p>Alternative Rock</p>
+                    </div>
+
+                    <div class="band-item">
+                        <h3>Langit Sore</h3>
+                        <p>Indie Folk</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+  
+        <section class="informasi-event">
+            <h2>Tentang Festival</h2>
+
+            <div class="event-list">
+                <div class="event-card">
+                    <h3>Musik Independen</h3>
+                    <p>Menampilkan karya musik independen.</p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Kreativitas Mahasiswa</h3>
+                    <p>Menjadi wadah kreativitas mahasiswa.</p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Hiburan Kampus</h3>
+                    <p>Membangun pengalaman musik bersama.</p>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="form-masukan" class="informasi-form">
+            <div class="form-section">
+                <p class="subtitle">SUARA PENGUNJUNG</p>
+                <h2>Formulir Masukan Pengunjung</h2>
+                <p class="form-desc">Semua kolom wajib diisi sebelum mengirim masukan.</p>
+
+                <form action="hasil-masukan.html" method="post" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama <span class="wajib">*</span></label>
+                            <input type="text" id="nama" name="nama"
+                            placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="wajib">*</span></label>
+                            <input type="email" id="email" name="email"
+                            placeholder="nama@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="band">Band Favorit <span class="wajib">*</span></label>
+                        <select id="band" name="band" required>
+                            <option value="">-- Pilih band favorit --</option>
+                            <option value="Senja di Kota">Senja di Kota</option>
+                            <option value="Ruang Tengah">Ruang Tengah</option>
+                            <option value="Langit Sore">Langit Sore</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan dan Kesan <span class="wajib">*</span></label>
+                        <textarea id="pesan" name="pesan"
+                        placeholder="Tuliskan pesan dan kesan"
+                        required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Kirim Masukan</button>
+                        <a href="hasil-masukan.html" class="link-samping">Lihat Hasil Masukan →</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
