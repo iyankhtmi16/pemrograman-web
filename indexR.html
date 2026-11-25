@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rundown - Suara Independen</title>
+    <link rel="stylesheet" href="webR.css">
+    <script src="rundown.js" defer></script>
+</head>
+<body>
+    <div class="page">
+
+        <header class="navbar">
+            <a href="index.html" class="logo">SUARA INDEPENDEN</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="indexA.html">About</a></li>
+                    <li><a href="indexR.html" class="aktif">Rundown</a></li>
+                </ul>
+            </nav>
+            <a href="#form-pilihan" class="nav-button">PILIH SESI</a>
+        </header>
+
+        <!-- RUNDOWN -->
+        <section id="rundown" class="jadwal">
+            <div class="judul-jadwal">
+                <p class="subjudul">SUARA INDEPENDEN</p>
+                <h2 id="judul">Jadwal Panggung</h2>
+                <p id="desk">Jangan sampai ketinggalan penampilan favoritmu.</p>
+                <p id="info" class="info-sesi"></p>
+                <p id="daftarSesi" class="info-sesi"></p>
+            </div>
+
+            <div class="daftar-jadwal">
+                <article class="item-jadwal">
+                    <p class="waktu">16.00 - 17.00</p>
+                    <div class="detail-jadwal">
+                        <h3>Opening Act</h3>
+                        <p>Pembukaan acara dan penampilan band pembuka lokal.</p>
+                    </div>
+                </article>
+
+                <article class="item-jadwal">
+                    <p class="waktu">17.30 - 19.00</p>
+                    <div class="detail-jadwal">
+                        <h3>Senja di Kota</h3>
+                        <p>Alunan musik Indie Pop yang syahdu di sore hari.</p>
+                    </div>
+                </article>
+
+                <article class="item-jadwal">
+                    <p class="waktu">19.30 - 21.00</p>
+                    <div class="detail-jadwal">
+                        <h3>Ruang Tengah</h3>
+                        <p>Energi Alternative Rock yang membakar semangat.</p>
+                    </div>
+                </article>
+
+                <article class="item-jadwal">
+                    <p class="waktu">21.00 - 23.00</p>
+                    <div class="detail-jadwal">
+                        <h3>Penutupan Festival</h3>
+                        <p>Sesi penutup acara bersama seluruh penonton.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="informasi-event">
+            <h2>Informasi Jadwal</h2>
+
+            <div class="event-list">
+                <div class="event-card">
+                    <h3>Waktu Mulai</h3>
+                    <p>16.00 WITA</p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Waktu Selesai</h3>
+                    <p>23.00 WITA</p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Lokasi</h3>
+                    <p>Open Air Stage, UIN Mataram</p>
+                </div>
+            </div>
+        </section>
+
+  
+        <section id="form-pilihan" class="informasi-form">
+            <div class="form-section">
+                <p class="subjudul">E-PASS PENGUNJUNG</p>
+                <h2>Formulir Pilihan Penampilan</h2>
+                <p class="form-desc">Isi data di bawah ini untuk mencetak kartu e-pass penampilan pilihanmu.</p>
+
+                <form action="hasil.html" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nama">Nama Pengunjung</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="penampilan">Penampilan Favorit</label>
+                            <select id="penampilan" name="penampilan" required>
+                                <option value="">-- Pilih sesi penampilan --</option>
+                                <option value="Opening Act (16.00 - 17.00)">Opening Act (16.00 - 17.00)</option>
+                                <option value="Senja di Kota (17.30 - 19.00)">Senja di Kota (17.30 - 19.00)</option>
+                                <option value="Ruang Tengah (19.30 - 21.00)">Ruang Tengah (19.30 - 21.00)</option>
+                                <option value="Penutupan Festival (21.00 - 23.00)">Penutupan Festival (21.00 - 23.00)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="alasan">Alasan Memilih</label>
+                        <textarea id="alasan" name="alasan" placeholder="Ceritakan alasanmu menantikan penampilan ini..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lampiran">Lampiran File <span class="label-opsional">(Opsional: Tiket / Poster / Dokumen)</span></label>
+                        <input type="file" id="lampiran" name="lampiran" accept="image/*,.pdf">
+                    </div>
+
+                    <button type="submit">Kirim &amp; Buat E-Pass</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
