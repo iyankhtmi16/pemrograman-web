@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran - Suara Independen</title>
+    <link rel="stylesheet" href="rundown.css">
+    <script src="rundown.js" defer></script>
+</head>
+<body>
+    <div class="page">
+
+
+        <header class="navbar">
+            <a href="index(home).html" class="logo">SUARA INDEPENDEN</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index(home).html">Home</a></li>
+                    <li><a href="index(about).html">About</a></li>
+                    <li><a href="index(rundown).html">Rundown</a></li>
+                    <li><a href="formulir.html" class="aktif">Formulir</a></li>
+                </ul>
+            </nav>
+            <a href="index(rundown).html" class="nav-button">Lihat Rundown</a>
+        </header>
+
+
+        <main class="form-wrapper">
+            <section class="form-card">
+                <p class="subtitle">REGISTRASI FESTIVAL</p>
+                <h2>Formulir Pendaftaran</h2>
+                <p class="form-desc">
+                    Isi data pendaftaran untuk mengikuti Suara Independen di Open Air Stage, UIN Mataram (15 Desember 2026).
+                    Hasilnya akan tampil dalam 3 poin utama di halaman hasil.
+                </p>
+
+                <form id="formPendaftaran" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="namaDaftar">Nama Lengkap <span class="wajib">*</span></label>
+                            <input type="text" id="namaDaftar" name="nama"
+                            placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="kontakDaftar">Email / No. WhatsApp <span class="wajib">*</span></label>
+                            <input type="text" id="kontakDaftar" name="kontak"
+                            placeholder="contoh@email.com atau 08xxxxxxxxxx" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="kategoriDaftar">Jenis Partisipasi <span class="wajib">*</span></label>
+                            <select id="kategoriDaftar" name="kategori" required>
+                                <option value="">-- Pilih jenis partisipasi --</option>
+                                <option value="Pengunjung / Audiens">Pengunjung / Audiens</option>
+                                <option value="Komunitas / Tenant Karya">Komunitas / Tenant Karya</option>
+                                <option value="Relawan / Kru Acara">Relawan / Kru Acara</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sesiDaftar">Sesi Kehadiran <span class="wajib">*</span></label>
+                            <select id="sesiDaftar" name="sesi" required>
+                                <option value="">-- Pilih sesi --</option>
+                                <option value="Sore (16.00 - 18.30 WITA)">Sore (16.00 - 18.30 WITA)</option>
+                                <option value="Malam (19.00 - 23.00 WITA)">Malam (19.00 - 23.00 WITA)</option>
+                                <option value="Full Day (Sore s/d Malam)">Full Day (Sore s/d Malam)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="identitasDaftar">Lampiran Identitas (KTM / KTP) <span class="wajib">*</span></label>
+                        <input type="file" id="identitasDaftar" name="identitas"
+                        accept=".pdf,.jpg,.jpeg,.png" required>
+                        <small class="hint-file">Partisipasi internal: lampirkan KTM • Partisipasi luar: lampirkan KTP (PDF/JPG/PNG, maks. 5 MB).</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="catatanDaftar">Catatan / Kebutuhan Tambahan <span class="wajib">*</span></label>
+                        <textarea id="catatanDaftar" name="catatan" rows="4"
+                        placeholder="Tuliskan asal instansi/komunitas atau catatan tambahan..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Kirim Pendaftaran</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>
